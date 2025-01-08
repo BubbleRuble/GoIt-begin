@@ -1,4 +1,11 @@
 body {
-            background-color:#fff;;
-            color: #fff;
+            background-color: whitesmoke;
+
+            .test-link:hover{
+                        color: red;
+            } 
+
+            .test-link:focus{
+                        color: blue             ;
+            }
 }
