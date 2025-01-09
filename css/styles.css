@@ -1,11 +1,8 @@
 body {
+            color: brown;
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
             background-color: whitesmoke;
 
-            .test-link:hover{
-                        color: red;
-            } 
-
-            .test-link:focus{
-                        color: blue             ;
+                 
             }
-}
