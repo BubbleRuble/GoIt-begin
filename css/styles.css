@@ -1,8 +1,79 @@
+:root {
+            /*Зліва, команда,яка відповідає за заданний колір*/
+            --primary-text-color: rgba(o,o,o,o.8);
+            --title-text-color: #000000;
+            --accent-color: #18a0fb;
+            --primary-bg-color: #ffffff;
+
+}
+            /* колір основного тексту #000000*/
+            /* колiр вториного тексту rgba(0,0,0,0.8)*/
+            /*білий #ffffff*/
+            /*акцент #18a0fb*/
+            /*колір вториного фону*/
+                 
 body {
-            color: brown;
             
             font-family: Georgia, 'Times New Roman', Times, serif;
-            background-color: whitesmoke;
+            background-color:var(--primary-bg-color);
+            color: var(--primary-text-color);
 
-                 
+            .logo {
+                        color: #000000;
             }
+            ul {
+                        list-style:none;
+            }
+            .logo:hover {
+                        color: #fd6892;
+            }
+            }
+
+           /*site nav стилізація*/
+           .site-nav .link{
+            color:var(--accent-color);
+           }
+           .site-nav .link:hover, 
+           .site-nav .link:focus{
+            color:var(--title-text-color);
+           }
+           .section-title {
+            color:var(--title-text-color);
+           }
+           .hero-title {
+            color:var(--title-text-color);
+            font-size: 40px;
+           }
+           /*features*/ 
+           .features .title {
+            color:var(--title-text-color);
+           }
+           .features .link {
+            color:var(--accent-color);
+           }
+           .work-link .link {
+            color: var(--title-text-color);
+           }
+           .job-link .link {
+            color: var(--accent-color);
+           }
+            .button {
+                   color: var(--title-text-color);    
+                   background-color: var(--primary-bg-color);
+
+                   font-size: 24px;
+                   padding: 12px 24px;
+                   display: inline-block;
+                   border: 1px solid black;
+            }
+            .button.primary {
+                        color: var(--primary-bg-color);
+                        background-color:var(--accent-color);
+                        border-color: transparent;
+            }
+            .button.secondary {
+                        color: var(--accent-color);
+                        background-color: var(--primary-bg-color);
+            }
+            
+             
