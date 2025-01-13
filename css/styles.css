@@ -4,20 +4,24 @@
             --title-text-color: #000000;
             --accent-color: #18a0fb;
             --primary-bg-color: #ffffff;
-
 }
             /* колір основного тексту #000000*/
             /* колiр вториного тексту rgba(0,0,0,0.8)*/
             /*білий #ffffff*/
             /*акцент #18a0fb*/
-            /*колір вториного фону*/
-                 
+            /*колір вториного фону*/   
 body {
-            
-            font-family: Georgia, 'Times New Roman', Times, serif;
             background-color:var(--primary-bg-color);
             color: var(--primary-text-color);
+            font-family: Montserrat,sans-serif;
+            letter-spacing: -0.015em;
+            font-size: 18px;
+            line-height: 1.67;
 
+            h1,h2,h3,h4,h5,h6{
+            font-family: Comfortaa,cursive
+            }
+            
             .logo {
                         color: #000000;
             }
@@ -27,11 +31,27 @@ body {
             .logo:hover {
                         color: #fd6892;
             }
-            }
+            .logo {
+              color: var(--title-text-color);
+              font-family: Comfortaa,cursive;
 
+              font-size: 28px;
+              line-height: 1.14;
+              text-decoration: none;
+
+            }
+            
+           
+            }
            /*site nav стилізація*/
            .site-nav .link{
             color:var(--accent-color);
+
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 1.2;
+            text-decoration: none;
+
            }
            .site-nav .link:hover, 
            .site-nav .link:focus{
@@ -40,40 +60,73 @@ body {
            .section-title {
             color:var(--title-text-color);
            }
+           /*hero*/
            .hero-title {
             color:var(--title-text-color);
-            font-size: 40px;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 1.43;
+            text-align: center;
            }
            /*features*/ 
-           .features .title {
+           .features .title,
+           .work-list .title {
             color:var(--title-text-color);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.5;
            }
-           .features .link {
+            .features .link,
+            .work-link .link {
             color:var(--accent-color);
+            text-decoration: none;
            }
-           .work-link .link {
-            color: var(--title-text-color);
+           
+           
+           
+           /*sections*/
+           .section-title {
+              color: var(--title-text-color-);
+              font-weight: 400;
+              font-size: 48px;
+              line-height: 1.5;
+              text-align: center;
            }
-           .job-link .link {
-            color: var(--accent-color);
+           .section-text {
+              color: var(--title-text-color);
+              font-size: 20px;
+              line-height: 1.2;
+              text-align: center;
            }
+           /*Buttons*/
             .button {
                    color: var(--title-text-color);    
                    background-color: var(--primary-bg-color);
-
-                   font-size: 24px;
-                   padding: 12px 24px;
-                   display: inline-block;
-                   border: 1px solid black;
+                  
+                   font-weight: 500;
+                   font-size: 15px;
+                   line-height: 1.2;
+                   text-decoration: none;
             }
-            .button.primary {
-                        color: var(--primary-bg-color);
-                        background-color:var(--accent-color);
-                        border-color: transparent;
-            }
+            .button.primary:hover {
+              color: var(--primary-bg-color);
+              background-color:var(--accent-color);
+              border-color: transparent;
+             }
             .button.secondary {
                         color: var(--accent-color);
                         background-color: var(--primary-bg-color);
+                        text-decoration: none;          
             }
+            .under-text {
+              color: var(--title-text-color);
+              font-weight: 400;
+              font-size: 25px;
+              line-height: 1.5;
+              text-align: center;
+              background-color:#f2f2f2 ;
+
+            }
+          
             
              
