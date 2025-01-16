@@ -22,7 +22,16 @@ body {
   h1,h2,h3,h4,h5,h6{
   font-family: Comfortaa,cursive
   }
-            
+}
+
+.container {
+margin-left: auto;
+margin-right: auto;
+width: 1280px;
+outline: 2px solid pink;
+
+}
+     /* Logo */
   .logo {
               color: #000000;
   }
@@ -41,9 +50,12 @@ body {
     text-decoration: none;
 
   }
-            
-           
+       
+  /*Page header*/
+  .page-header {
+    background-color: #ccc;
   }
+
  /*site nav стилізація*/
  .site-nav .link{
   color:var(--accent-color);
@@ -69,6 +81,10 @@ body {
   line-height: 1.43;
   text-align: center;
  }
+ .hero p {
+ color: var(--primary-text-color);
+ text-align: center;
+ }
  /*features*/ 
  .features .title {
   color:var(--title-text-color);
@@ -87,6 +103,9 @@ body {
   text-decoration: none;
  }
  /* follow */
+ .follow {
+  margin-left: 10px;
+ }
  .follow .text {
   width: 350px;
   font-weight: 400;
@@ -115,6 +134,13 @@ color: var(--title-text-color);
  }
  /*Buttons*/
   .button {
+display: inline-block;
+border-radius: 6px;
+padding: 11px 34px;
+min-width: 130px;
+text-align: center; 
+border: 1px solid transparent;  
+  
 color: var(--title-text-color);    
 background-color: var(--primary-bg-color);
         
@@ -122,7 +148,8 @@ font-weight: 500;
 font-size: 15px;
 line-height: 1.2;
 text-decoration: none;
-  }
+ }
+
   .button.primary:hover,
   .button.primary:focus {
     color: var(--title-text-color);
@@ -130,11 +157,15 @@ text-decoration: none;
    .button.primary{
   color: var(--primary-bg-color);
   background-color:var(--accent-color);
+  border: 1px solid transparent;  
+
    }
   .button.secondary {
   color: var(--accent-color);
   background-color: var(--primary-bg-color);
-  text-decoration: none;          
+  text-decoration: none;
+  border-color: var(--accent-color); 
+     
   }
   .under-text {
     color: var(--title-text-color);
