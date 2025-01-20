@@ -25,6 +25,12 @@ body {
   }
 }
 
+.list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+ }
+
 .container {
 margin-left: auto;
 margin-right: auto;
@@ -45,6 +51,8 @@ list-style:none;
 color: #fd6892;
 }
 .logo {
+margin-right: 70px;
+
 color: var(--title-text-color);
 font-family: Comfortaa,cursive;
 
@@ -53,14 +61,35 @@ line-height: 1.14;
 text-decoration: none;
  }
        
-  /*Page header*/
-  .page-header {
-   background-color: #ccc;
-  }
+ /*Page header*/
+.page-header {
+ background-color: #ccc;
+}
+/* main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
  /*site nav стилізація*/
+ .site-nav {
+  display: flex;
+ }
+ 
+ .site-nav .item + .item{
+  margin-left: 40px;
+ }
+
+ /* .site-nav .item:not(:last-child) {
+  margin-right: 40px;
+} */
+
  .site-nav .link{
   color:var(--accent-color);
+
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 10px;
 
   font-weight: 500;
   font-size: 15px;
@@ -68,12 +97,16 @@ text-decoration: none;
   text-decoration: none;
 
  }
- .list {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-
+ /* Auth-nav */
+ .auth-nav {
+  display:flex;
+  margin-left: auto; 
  }
+
+ .auth-nav .item + .item {
+  margin-left: 12px;
+ }
+ 
  .site-nav .link:hover, 
  .site-nav .link:focus{
   color:var(--title-text-color);
@@ -104,6 +137,14 @@ text-decoration: none;
   line-height: 1.5;
  }
 
+.features {
+  display: flex;
+  flex-wrap:wrap ;
+}
+.features .item {
+  width: 500px;
+  background-color: red;
+}
  
   .features .link,
   .work-link .link {
@@ -127,15 +168,16 @@ text-decoration: none;
  .follow .title {
  color: var(--title-text-color);
  }
-           
-           
-           
+                    
  /*sections*/
 .section.no-padding{
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
+.section .section-title {
+  text-align: center;
+  
+ }
  .section {
   padding-top: 120px;
   padding-bottom: 120px;
