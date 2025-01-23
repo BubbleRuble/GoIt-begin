@@ -38,13 +38,10 @@ margin-right: auto;
 width: 1280px;
 padding-left: 20px;
 padding-right: 20px;
-outline: 2px solid pink;
+/* outline: 2px solid pink; */
 
 }
 /* Logo */
-.logo {
-color: #000000;
-}
 ul {
 list-style:none;
 }
@@ -116,7 +113,7 @@ text-decoration: none;
  /*HERO*/
  .hero {
   text-align: center;
-
+  
  }
 
  .hero-title {
@@ -229,8 +226,8 @@ text-decoration: none;
   align-items: center;
  }
 
- .work-link .link:hover,
- .work-link .link:focus{
+ .footer-link .link:hover,
+ .footer-link .link:focus{
   color: orange;
  }
  .work-list > .item:nth-child(2n) {
@@ -268,8 +265,12 @@ text-decoration: none;
   padding-top: 50px;
   padding-bottom: 50px;
  }
+ .container.registration .item{
+  text-transform: uppercase;
+ }
+
 .container .work-link{
-  margin-left:400px;
+  margin-left:300px;
 }
 .work-link .button.primary {
   margin-left: 20px;
@@ -298,6 +299,10 @@ text-decoration: none;
 .button.primary:focus {
   color: var(--title-text-color);
 }
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--title-text-color);
+}
 .button.primary{
   color: var(--primary-bg-color);
   background-color:var(--accent-color);
@@ -311,6 +316,57 @@ text-decoration: none;
   border-color: var(--accent-color); 
      
   }
+/*footer*/
+.container.footer{
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-bottom: 50px;
+}
+
+.container.footer .item{
+  margin-right: 66px;
+  }
+
+.footer-link{
+display: flex;
+margin-left: 55px;
+padding:0;
+margin:0;
+}
+.container.footer .logo {
+margin-right: 100px;
+margin-left: 100px;
+text-align: center;
+}
+
+.footer-link:nth-child(1) {
+margin-bottom: 18px;
+margin-top: 18px;
+}
+.footer-link .item:nth-child(3) {
+margin: 0px;
+}
+
+.footer-link .link {
+color:var(--accent-color);
+list-style: none;
+text-decoration: none;
+}
+.footer-link.second {
+padding: 0;
+margin: 0;
+}
+
+.footer-link .subject{
+margin-right: 20px;
+}
+.container-list.footer {
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
 .under-text {
   color: var(--title-text-color);
   font-weight: 400;
@@ -318,8 +374,7 @@ text-decoration: none;
   line-height: 1.5;
   text-align: center;
   background-color:#f2f2f2 ;
+  margin-top: 10px;
 
 }
-  
-            
              

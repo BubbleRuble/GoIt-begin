@@ -1,0 +1,48 @@
+.container {
+display: flex;
+flex-wrap: wrap;
+width: 940px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.link {
+background-color: aqua;
+padding: 20px;
+margin: 50px;
+text-align: center;
+
+}
+
+.box {
+height: 190px;
+width: calc(50% - 20px);
+margin: 10px;
+box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
+
+.box:nth-child(1) {
+background-color: #f16f04;
+background-image:url(./images/barcafield.jpg);
+}
+
+.box:nth-child(2) {
+ background-color: #3af321;
+ background-image: url(./images/tiger.png);
+ background-repeat:no-repeat;
+ background-position: center;
+ background-size:contain;
+ 
+}
+
+.box:nth-child(3) {
+background-color: #087fe0;
+background-image: url(./images/Facebook_logo_\(square\).png);
+background-size: 50px;
+background-repeat: repeat;
+}
+
+.box:nth-child(4) {
+background-color: #ebfc03;
+}
