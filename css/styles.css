@@ -113,17 +113,32 @@ text-decoration: none;
  /*HERO*/
  .hero {
   text-align: center;
-  
  }
 
+ .overlay {
+  height: 300px;
+  outline: 1px solid black;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right,
+  rgba(255, 0, 0, 0.2),
+  rgba(0, 0, 255,0.3)),
+  url(../images/barcafield.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+ }
  .hero-title {
-  color:var(--title-text-color);
+  color:var(--accent-color);
   font-weight: 400;
   font-size: 56px;
   line-height: 1.43;
   margin-top: 0px; 
   margin-bottom: 40px;
  }
+
  .hero p {
  color: var(--primary-text-color);
  }

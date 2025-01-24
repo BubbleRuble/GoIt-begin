@@ -7,11 +7,31 @@ margin-right: auto;
 }
 
 .link {
-background-color: aqua;
-padding: 20px;
-margin: 50px;
+display: inline-flex;
+width: 100px;
+text-decoration: none;
+list-style: none;
+background-image: linear-gradient(to right, 
+rgba(0, 0, 255,0.3),
+rgba(255, 0, 0,0.3));
+color: white;
+padding: 30px;
+margin: 20px;
 text-align: center;
+}
 
+.link:hover,
+.link:focus{
+color: #6af321;
+}
+
+.link::before{
+width: 30px;
+height: 30px;
+content: "";
+background-image: url(./images/Applelogo.png);
+background-size: contain;
+background-position: center;
 }
 
 .box {
@@ -29,10 +49,10 @@ background-image:url(./images/barcafield.jpg);
 
 .box:nth-child(2) {
  background-color: #3af321;
- background-image: url(./images/tiger.png);
+ background-image: url(./images/tiger.png),url(./images/stars\ sky.jpg);
  background-repeat:no-repeat;
- background-position: center;
- background-size:contain;
+ background-position:center;
+ background-size:contain, cover;
  
 }
 
@@ -45,4 +65,97 @@ background-repeat: repeat;
 
 .box:nth-child(4) {
 background-color: #ebfc03;
+}
+
+.overlay {
+ height: 480px;
+ outline: 1px solid black;
+ max-width: 1280px;
+ margin-left: auto;
+ margin-right: auto;
+ background-image: linear-gradient(to right, 
+ rgba(255, 0, 0, 0.2),
+ rgba(0, 0, 255,0.3)),
+ url(./images/barcafield.jpg);
+ background-position: center;
+ background-size: cover; 
+} 
+.overlay .title {
+color: white;
+display: inline-block;
+margin-left:500px;
+}
+
+.button{
+text-decoration: none;
+display: inline-flex;
+padding: 30px 30px;
+color: white;
+background-color: teal;
+align-items: center;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.button:hover,
+.button:focus{
+background-color: orange;
+}
+
+/*Іконка біля кнопочки*/
+.button::before {
+width: 20px;
+height: 20px;   
+content:"";
+background-image: url(./images/rocket.png);    
+background-size: contain; 
+margin-right: 10px;
+}
+
+.list{
+display: flex;
+padding: 0px;
+list-style: none;
+}
+.list-item {
+ width: 400px;
+ padding: 10px;
+ margin: 10px;
+ border-radius: 4px;
+ outline: 1px solid black;
+}
+
+.list-item::before{
+display: block;
+content: "";
+height: 40px;
+outline: 1px solid black;
+background-image:linear-gradient(to right,
+rgba(255, 0, 0,0.2),
+rgba(0, 0, 255,0.2)),
+url(./images/rocket.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.icon::before{
+display: block;
+content: "";
+height: 40px;
+outline: 1px solid black;
+background-image: url(./images/avrora.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: aqua;
+}
+
+.list-item > .title{
+margin-top: 0px;
+}
+
+.list-item > .text{
+margin-top: 0px;
+margin-bottom: 0px;
 }
