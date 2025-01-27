@@ -159,3 +159,51 @@ margin-top: 0px;
 margin-top: 0px;
 margin-bottom: 0px;
 }
+
+.actions {
+display: flex;
+border: 0px;
+padding: 0px;
+margin: 0px;
+outline: 1px solid black;
+list-style: none;
+}
+
+.theme {
+ height: 100px;
+ width: 100px;
+}
+
+.theme:hover .background{
+fill: red;
+}
+
+
+.document{
+padding: 0px;
+background-color: aqua;
+border:none;
+cursor: pointer;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+}
+
+.actions li{
+display: block;
+width: 100px;
+height: 100px;
+}
+
+.document-file{
+display: block;
+/* background-image: linear-gradient(to right,
+rgba(255, 0, 0,0.5),
+rgba(0, 0, 255,0.5)); */
+border: none;
+margin: auto;
+}
+
+.document-file:hover{
+fill: red;
+}
