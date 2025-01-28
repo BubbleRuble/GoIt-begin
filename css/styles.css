@@ -345,29 +345,36 @@ margin-bottom: 50px;
 
 .footer-link{
 display: flex;
-margin-left: 55px;
-padding:0;
-margin:0;
+padding:0px;
+margin:0px;
 }
+
 .container.footer .logo {
 margin-right: 100px;
 margin-left: 100px;
 text-align: center;
 }
 
-.footer-link:nth-child(1) {
-margin-bottom: 18px;
-margin-top: 18px;
+.footer-link .third {
+  padding: 0px;
+  margin: 0px;
 }
+
+.footer-link .link {
+  color:var(--accent-color);
+  list-style: none;
+  text-decoration: none;
+  }
+/*зліва і справа від лого*/
 .footer-link .item:nth-child(3) {
 margin: 0px;
 }
 
-.footer-link .link {
-color:var(--accent-color);
-list-style: none;
-text-decoration: none;
+/* під лого*/
+.footer-link.third .subject:nth-child(4) {
+  margin-right: 0px;
 }
+
 .footer-link.second {
 padding: 0;
 margin: 0;
@@ -376,6 +383,7 @@ margin: 0;
 .footer-link .subject{
 margin-right: 20px;
 }
+
 .container-list.footer {
 display: flex;
 align-items: center;
@@ -390,5 +398,66 @@ justify-content: space-around;
   text-align: center;
   background-color:#f2f2f2 ;
   margin-top: 10px;
+
+}
+
+.key {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+  background-image: url(../images/Facebook.svg);
+  background-position: center;
+  background-size: contain;
+}
+
+.key:hover {
+  transform: scale(1.2);
+  background-color: #000000;
+}
+
+.key.insta{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-size: 20px;
+text-decoration: none;
+transition: transform 0.3s, background-color 0.3s;
+background-image: url(../images/inasta.jpg);
+background-size: contain;
+background-position: center;
+}
+
+.key.linkedin{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-size: 20px;
+text-decoration: none;
+transition: transform 0.3s, background-color 0.3s;
+background-image: url(../images/Linkedin.svg);
+}
+
+.key.telegram{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-size: 20px;
+text-decoration: none;
+transition: transform 0.3s, background-color 0.3s;
+background-image: url(../images/telegram.svg);
 
 }

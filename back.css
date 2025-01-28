@@ -100,6 +100,7 @@ cursor: pointer;
 .button:hover,
 .button:focus{
 background-color: orange;
+color: black;
 }
 
 /*Іконка біля кнопочки*/
@@ -144,7 +145,7 @@ display: block;
 content: "";
 height: 40px;
 outline: 1px solid black;
-background-image: url(./images/avrora.png);
+background-image: url(./images/blue.png);
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
@@ -207,3 +208,26 @@ margin: auto;
 .document-file:hover{
 fill: red;
 }
+
+.key {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s;
+            background-image: url(./images/Facebook_logo__square_.svg);
+            background-size: cover;
+            background-position: center;
+
+          }
+
+.key:hover {
+            transform: scale(1.2);
+            background-color: #0056b3;
+          }
