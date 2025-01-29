@@ -461,3 +461,22 @@ transition: transform 0.3s, background-color 0.3s;
 background-image: url(../images/telegram.svg);
 
 }
+
+.client-list.list .text{
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--primary-text-color);
+  width: 200px;
+  background-image:linear-gradient(to right,
+  rgba(255, 0, 0,0.5),
+  rgba(0, 0, 255,0.5));
+  border-radius: 5px;
+
+}
+
+.client-image{
+  background-image: url(../images/whitesky.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}

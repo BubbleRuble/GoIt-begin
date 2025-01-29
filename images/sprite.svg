@@ -1,10 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" 
 aria-hidden="true" 
-style="position:absolute;width:0;height:0;overflow:hidden"><defs>
-<symbol 
-id="icon-lab" viewBox="0 0 32 32">
-<path d="M30 25 20 9V2h1l1-1-1-1H11l-1 1 1 1h1v7L2 25c-2 4 0 7 4 7h20c4 0 6-3 4-7zM8 20l6-11V2h4v7l6 11H8z"/>
-</symbol><symbol id="icon-appleinc" viewBox="0 0 32 32">
+style="position:absolute;width:0;height:0;overflow:hidden">
+<defs>
+<symbol id="icon-lab" viewBox="0 0 32 32">
+<path d="M30 25 20 9V2h1l1-1-1-1H11l-1 1 1 1h1v7L2 25c-2 4 0 7 4 7h20c4 0 6-3 4-7zM8 20l6-11V2h4v7l6 11H8z"/></symbol>
+<symbol id="icon-appleinc" viewBox="0 0 32 32">
 <path d="M25 17c0-4 3-6 3-6-2-3-5-3-6-3-2-1-5 1-6 1l-5-1c-3 0-5 1-7 4-3 5 0 12 2 16 2 2 3 4 5 4l6-1 5 1c2 0 3-2 
 5-4l2-5s-4-1-4-6zM21 5c1-1 2-3 1-5l-4 2-2 5c2 1 4-1 5-2z"/></symbol>
-</defs></svg>
+<symbol id="icon-home" viewBox="0 0 32 32">
+<path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path>
+</symbol>
+</defs>
+</svg>
