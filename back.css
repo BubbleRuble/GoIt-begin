@@ -233,3 +233,64 @@ fill: red;
 transform: scale(1.2);
 background-color: #0056b3;
 }
+
+
+.product{
+  width: 400px;
+  height: 400px;
+  margin-bottom: 300px;
+  outline: 1px solid black;
+}
+
+
+.product-actions{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  bottom:0;
+  right:0;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  background-color: white;
+  position:absolute;
+}
+
+.product-icon{
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.product-icon:hover{
+  fill: #3af321;
+  transform: scale(1.1);
+}
+.product-thumb{
+  position: relative;
+}
+.fire{
+  background-color: transparent;
+  border: none;
+}
+.product-element{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  bottom:50%;
+  right:50%;
+  transform: translate(50%, 50%);
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  position:absolute;
+  opacity: 0;
+  transition: 500ms opacity linear;
+}
+.product:hover .product-element{
+  opacity: 1;
+}
