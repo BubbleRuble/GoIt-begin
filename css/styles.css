@@ -144,6 +144,12 @@ text-decoration: none;
  }
  
  /*features*/ 
+.features.list{
+background-image:linear-gradient(to right, 
+rgba(31, 148, 11, 0.2),
+rgba(244, 240, 10, 0.3));
+}
+
  .features .title {
   color:var(--title-text-color);
   font-weight: 700;
@@ -240,6 +246,32 @@ text-decoration: none;
   display: flex;
   align-items: center;
  }
+/*ПЕРВАГИ*/
+ .item.lion{
+  background-image: url(../images/lion.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+ }
+.item.eagle{
+  background-image: url(../images/eagle.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.item.chicken{
+  background-image: url(../images/chicken.jpg);
+  background-size:cover;
+  background-position: center;
+  color: white;
+}
+.item.giraffe{
+  background-image: url(../images/Giraffe.jpg);
+  background-size: cover;
+  background-position: center;
+  color:white;
+}
+
 
  .footer-link .link:hover,
  .footer-link .link:focus{
@@ -319,11 +351,11 @@ text-decoration: none;
   color: var(--title-text-color);
 }
 .button.primary{
-  color: var(--primary-bg-color);
-  background-color:var(--accent-color);
-  border: 1px solid transparent;  
+color: var(--primary-bg-color);
+background-color:var(--accent-color);
+border: 1px solid transparent;  
 
-   }
+}
 .button.secondary {
   color: var(--accent-color);
   background-color: var(--primary-bg-color);
