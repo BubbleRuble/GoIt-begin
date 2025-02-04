@@ -166,4 +166,48 @@ padding-bottom: 50px;
 }
 
 
+.menu{
+margin-top: 200px;
+padding: 0px;
+list-style: none;
 
+display: flex;
+position: relative;
+}
+
+.menu-item{
+margin-left: 30px;
+outline: 2px solid black;
+position: relative;
+}
+.menu-item:hover .submenu{
+display: block;
+}
+
+.menu-link{
+display: block;
+padding: 20px;
+text-decoration: none;
+background-color: pink;
+color:red;
+}
+
+.submenu{
+padding: 0;
+margin: 0;
+background-color:#ccc;
+list-style: none;
+
+display: none;
+position: absolute;
+
+left:0;
+top:100%;
+width: 100%;
+outline: 1px solid red;
+}
+.submenu a{
+ text-decoration: none;
+list-style: none;
+color: black;
+}
