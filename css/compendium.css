@@ -195,7 +195,7 @@ color:red;
 .submenu{
 padding: 0;
 margin: 0;
-background-color:#ccc;
+background-color: grey;
 list-style: none;
 
 display: none;
@@ -210,4 +210,65 @@ outline: 1px solid red;
  text-decoration: none;
 list-style: none;
 color: black;
+}
+
+.btn::before{
+content: "";
+display: inline-block;
+width: 20px;
+height: 20px;
+margin-right: 10px;
+background-image: url(/imagesforcomp/play.svg);
+background-size: contain;
+
+transition: transform 250ms ease-out;
+}
+
+.btn:hover::before{
+transform: translateY(-50px);   
+}
+
+.btn::after{
+content: "";
+display: inline-block;
+width: 20px;
+height: 20px;
+background-color: red;
+position: absolute;
+top:50%;
+left: 30px;      
+
+transition: transform 250ms ease-out;
+transform:translateY(30px);
+}
+
+.btn:hover::after{
+transform: translateY(-50%);    
+}
+
+.btn {
+position: relative;
+display: inline-flex;
+align-items: center;
+border: none;
+margin: 0px;
+padding: 10px 30px;
+border-radius: 3px;
+background-color: teal;
+color: white;
+font:inherit;
+cursor: pointer;
+margin-bottom: 300px;
+margin-left: 200px;
+
+overflow: hidden;
+
+transition-property:background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4 0, 0.2, 1);
+}
+.btn:hover,
+.btn:focus{
+ background-color: pink;
+ 
 }
