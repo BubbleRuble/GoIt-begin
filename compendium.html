@@ -67,6 +67,51 @@
 </ul>
 
 
+<!--HERE-->
+
+<form class="js-speaker-form" >
+    <label for="name">name</label>
+    <input type="text" name="name" id="name"/>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" />
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+
+    <label for="tel">telephone</label>
+    <input type="tel" name="tel" id="tel"/>
+
+<div role="group" class="group">
+    <label for="html">HTML</label>
+    <input type="checkbox" name="topic" value="html" id="html" />
+
+    <label for="css">CSS</label>
+    <input type="checkbox" name="topic" value="css" id="css" />
+
+    <label for="JS">JS</label>
+    <input type="checkbox" name="topic" value="JS" id="JS" />
+</div>
+
+<div role="group" class="group">
+<label for="Junior">Junior</label>
+<input type="radio" name="level" value="Junior" id="Junior">
+
+<label for="TM">TeamLid</label>
+<input type="radio" name="level" value="TeamLid" id="TM">
+
+<label for="Senior">Senior</label>
+<input type="radio" name="level" value="Senior" id="Senior">
+</div>
+
+<label for="date">Pick Your Date here -></label>
+<input type="date" name="date" id="date">
+
+
+    <button type="submit">Submit</button>
+</form>
+
+
 
 
 
@@ -103,6 +148,24 @@
 
 
 </main>
+
+
+
+
+
+<script>
+(() => {
+    document
+    .querySelector('.js-speaker-form')
+    .addEventListener('submit', e => {
+      e.preventDefault();
+  
+      new FormData(e.currentTarget).forEach((value, name) =>
+        console.log(`${name}: ${value}`),
+      );
+    });
+  })();
+  </script>
 
 </body>
 </html>
