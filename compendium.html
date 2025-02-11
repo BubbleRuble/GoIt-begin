@@ -69,43 +69,90 @@
 
 <!--HERE-->
 
-<form class="js-speaker-form" >
-    <label for="name">name</label>
-    <input type="text" name="name" id="name"/>
-
+<form class="form js-speaker-form">
+<div class="form-field">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" name="name" id="name" placeholder="Antonio Banderas" autofocus/>
+</div>
+<div class="form-field">
     <label for="email">Email</label>
-    <input type="email" name="email" id="email" />
-
+    <input type="email" class="form-input" name="email" id="email" placeholder="lox@gmail.com"/>
+</div>
+<div class="form-field">
     <label for="password">Password</label>
-    <input type="password" name="password" id="password">
-
+    <input type="password" name="password" id="password"/>
+</div>
+<div class="form-field">
     <label for="tel">telephone</label>
-    <input type="tel" name="tel" id="tel"/>
-
-<div role="group" class="group">
-    <label for="html">HTML</label>
-    <input type="checkbox" name="topic" value="html" id="html" />
-
-    <label for="css">CSS</label>
-    <input type="checkbox" name="topic" value="css" id="css" />
-
-    <label for="JS">JS</label>
-    <input type="checkbox" name="topic" value="JS" id="JS" />
+    <input type="tel" name="tel" id="tel" placeholder="+380-00-000-00-00"/>
 </div>
 
 <div role="group" class="group">
-<label for="Junior">Junior</label>
-<input type="radio" name="level" value="Junior" id="Junior">
+    <h2 class="title"> Your Class</h2>
 
-<label for="TM">TeamLid</label>
-<input type="radio" name="level" value="TeamLid" id="TM">
+    <ul class="topic-options">
+    <li>
+        <input type="checkbox" name="topic" value="html" id="html"/>
+        <label for="html">HTML</label>
+    </li>
 
-<label for="Senior">Senior</label>
-<input type="radio" name="level" value="Senior" id="Senior">
+    <li>
+        <input type="checkbox" name="topic" value="css" id="css"/>
+        <label for="css">CSS</label>
+    </li>
+
+    <li>
+        <input type="checkbox" name="topic" value="JS" id="JS"/>
+        <label for="JS">JavaScript</label>
+    </li>
+    </ul>
 </div>
 
-<label for="date">Pick Your Date here -></label>
-<input type="date" name="date" id="date">
+<div role="group" class="group">
+    <h2 class="title-exp">Your expirience</h2>
+<ul class="topic-exp">
+  
+        <li><input type="radio" name="level" value="Junior" id="Junior"/>
+            <label for="Junior">Junior</label>
+        </li>
+
+        <li><input type="radio" name="level" value="TeamLid" id="TM"/>
+            <label for="TM">TeamLid</label>
+        </li>
+
+        <li><input type="radio" name="level" value="Senior" id="Senior"/>
+            <label for="Senior">Senior</label>
+        </li>
+</ul>
+</div>
+
+<div class="form-field">
+    <label for="fsdf">search here</label>
+    <input type="search" name="dfs" id="fsdf"/>
+</div>
+
+<div class="form-field">
+    <label for="time">your time</label>
+<input
+class="date" 
+type="datetime-local" 
+name="time" 
+id="time" 
+min="2025-02-00T10:00"
+max="2025-02-11T15:00"/>
+</div>
+
+<div class="form-field">
+    <label for="file">Download File</label>
+    <input type="file" name="file" id="file">
+</div>
+
+
+<div class="form-field">
+    <input type="checkbox" name="agree" id="agrisment">
+    <label for="agrisment">I agree with this statement</label>
+</div>
+
 
 
     <button type="submit">Submit</button>
