@@ -22,8 +22,66 @@
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ratione et quasi voluptate autem, recusandae ipsam mollitia consequatur voluptatibus illo nihil quia fugit aliquam velit corrupti neque atque incidunt nemo adipisci, tenetur, rerum repellat commodi similique. Earum, quis? Debitis tenetur quam, commodi sapiente quasi ipsa repellat mollitia deleniti praesentium tempore exercitationem sequi quos reiciendis perspiciatis recusandae repudiandae ratione officiis, esse sunt natus laborum. Fugiat officiis reprehenderit id. At, officiis pariatur.
 </p>
 
+
+<form class="form">
+    <div class="lemonade-field">
+        <input type="text" name="name" id="name" class="lemonade-input" placeholder=" ">
+        <label for="name" class="lemonade-label">Name</label>
+    </div>
+
+    <div class="lemonade-field">
+        <input type="email" name="mail" id="mail" class="lemonade-input" placeholder=" ">
+        <label for="mail" class="lemonade-label">Email</label>
+    </div>
+
+    <button type="submit">Send</button>
+</form>
+
+
+
+
+
+
 <div class="backdrop is-hidden">
-    <div class="modal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia incidunt sit eligendi quae sed quibusdam iure illum tenetur. Dolor, dolorem!</div>
+    <div class="modal">
+    <h2 class="title">Give me your information</h2>
+
+
+   
+        <button aria-label="Element" class="cross"></button>
+  
+
+
+<form class="form-field"> 
+
+    <div class="table">
+            
+            <input type="text" name="name" id="name">
+            <label for="name">Name</label>
+         
+            <input type="tel" name="phone" id="phone">
+            <label for="phone">Phone</label>
+
+            <input type="email" name="email" id="email">
+            <label for="email">Email</label>
+
+            <textarea name="comment" id="comment"  cols="10" rows="6" placeholder="commenting"></textarea>
+
+
+
+
+    </div>
+        <input type="checkbox" name="policy" id="policy">
+        <label for="policy">I agree with this statement</label>
+
+        <div class="send">
+             <input type="submit" value="Send" class="cup">
+        </div>
+</form>
+    </div>
+
+
+
 </div>
 
 
@@ -113,6 +171,22 @@
 
 </ul>
 <a href="https://www.nvidia.com/en-eu/" class="key"></a>
+
+
+
+<script>
+    (() => {
+        document
+        .querySelector('.form-field')
+        .addEventListener('submit', e => {
+          e.preventDefault();
+      
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`),
+          );
+        });
+      })();
+      </script>
 
 
 </body>
